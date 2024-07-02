@@ -23,7 +23,7 @@ public class AccountDAO {
                 );
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         return null;
     }
@@ -43,7 +43,7 @@ public class AccountDAO {
                 );
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         return null;
         
@@ -65,7 +65,6 @@ public class AccountDAO {
             }
         } catch (SQLException e) {
             // TODO: handle exception
-            // e.printStackTrace();
             System.out.println(e.getMessage());
         }
         

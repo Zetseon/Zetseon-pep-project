@@ -55,8 +55,6 @@ public class SocialMediaController {
     private void registerHandler(Context context) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         Account account = mapper.readValue(context.body(), Account.class);
-        // Account account = context.bodyAsClass(Account.class);
-
         Account createdAccount = accountService.register(account);
 
         if (createdAccount != null) {
